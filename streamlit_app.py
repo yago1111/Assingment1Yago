@@ -4,12 +4,6 @@ import matplotlib.pyplot as plt
 import random
 import time
 
-conn = st.connection("gsheets", type=GSheetsConnection)
-
-data = conn.read()
-
-st.title("Which taxi colour has a higher average tip?")
-
 # Connect to the Google Sheet using the connection info in secrets.toml
 conn = st.connection("gsheets", type=GSheetsConnection)
 data = conn.read()
